@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>la FAB</title>
+    <link rel="icon" type="image/png" href="fotos/favi.png" />
+    <!-- Metadatos genéricos -->
+    <meta name="description" content="Menos es más">
+    <meta name="image" content="fotos/metadat.jpg">
+    <!-- Metadatos Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="la FAB">
+    <meta name="twitter:description" content="Menos es más">
+    <meta name="twitter:image:src" content="fotos/metadat.jpg">
+    <!-- Metadatos Open Graph (Facebook, Pinterest & LinkedIn) -->
+    <meta name="og:title" content="la FAB">
+    <meta name="og:description" content="Menos es más">
+    <meta name="og:image" content="fotos/metadat.jpg">
+    <meta name="og:type" content="website">
+    <!-- Ahora vinculamos el estilo -->
+    <link rel="stylesheet" href="estilo.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <h1>LA FAB</h1>
+        <h2>Lo simple es infinito a los ojos</h2>
+    </header>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="fotos/videofab.webm" type="video/webm">
+        <source src="fotos/videofab.mp4" type="video/mp4">
+    </video>
+
+    <main>
+
+        <section id="equipo">
+
+            <h3>Quiénes somos</h3>
+
+            <div class="integrante">
+                <h4>Francisca Godoy</h4>
+                <address><a href="mailto:fbgodoy@uc.cl">fbgodoy@uc.cl</a></address>
+                <blockquote>Soy la F<cite>F.</cite></blockquote>
+            </div>
+
+            <div class="integrante">
+                <h4>Amanda Del Río</h4>
+                <address><a href="mailto:algonzalez3@uc.cl">algonzalez3@uc.cl</a></address>
+                <blockquote>Soy la A<cite>A.</cite></blockquote>
+            </div>
+
+            <div class="integrante">
+                <h4>Benjamin Jimenez</h4>
+                <address><a href="mailto:bijimenez@uc.cl">bijimenez@uc.cl</a></address>
+                <blockquote>Soy la B<cite>B.</cite></blockquote>
+            </div>
+
+        </section>
+
+        <section id="portafolio">
+            <h3>Nuestros trabajos</h3>
+            <!--acá se colocan y organizan las cosas con programación-->
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Procesos de Producción · sección web · segundo semestre · 2019</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+
+    <script>
+        window.onload = function() {
+            var container = document.querySelector('#portafolio');
+            var msnry = new Masonry(portafolio, {
+                itemSelector: '.item'
+            });
+        };
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="portafolio.js"></script>
+
+</body>
+
+</html>
